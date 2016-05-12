@@ -90,24 +90,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h1><h3 id="CSS-伪类用于向某些选择器添加特殊的效果。"><a href="#CSS-伪类用于向某些选择器添加特殊的效果。" class="headerlink" title="CSS 伪类用于向某些选择器添加特殊的效果。"></a>CSS 伪类用于向某些选择器添加特殊的效果。</h3><h4 id="默认a标签的4个伪类"><a href="#默认a标签的4个伪类" class="headerlink" title="默认a标签的4个伪类:"></a>默认a标签的4个伪类:</h4><p><code>:link </code></p>
-<p><code>:hover </code></p>
-<p><code>:visited </code></p>
-<p><code>:active </code></p>
-<h3 id="在支持-CSS-的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。"><a href="#在支持-CSS-的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。" class="headerlink" title="在支持 CSS 的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。"></a>在支持 CSS 的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。</h3><p><code> a:link {color: #FF0000}</code>        /<em> 未访问的链接 </em>/</p>
-<p><code>a:visited {color: #00FF00}</code>    /<em> 已访问的链接 </em>/</p>
-<p><code>a:hover {color: #FF00FF}    </code> /<em> 鼠标移动到链接上 </em>/</p>
-<p><code>a:active {color: #0000FF}    </code> /<em> 选定的链接 </em>/</p>
-<h4 id="那么-伪类有没有什么注意事项呢"><a href="#那么-伪类有没有什么注意事项呢" class="headerlink" title="那么 伪类有没有什么注意事项呢?"></a>那么 伪类有没有什么注意事项呢?</h4><h3 id="在-CSS-定义中，a-hover-必须被置于-a-link-和-a-visited-之后，才是有效的。"><a href="#在-CSS-定义中，a-hover-必须被置于-a-link-和-a-visited-之后，才是有效的。" class="headerlink" title="在 CSS 定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。"></a>在 CSS 定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。</h3><h3 id="在-CSS-定义中，a-active-必须被置于-a-hover-之后，才是有效的。"><a href="#在-CSS-定义中，a-active-必须被置于-a-hover-之后，才是有效的。" class="headerlink" title="在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。"></a>在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。</h3><h3 id="而且伪类名称对大小写不敏感。"><a href="#而且伪类名称对大小写不敏感。" class="headerlink" title="而且伪类名称对大小写不敏感。"></a>而且伪类名称对大小写不敏感。</h3><h2 id="注意-a标签默认支持4个伪类-但是div等元素不推荐使用类似于-div-hover这样的代码-因为高版本浏览器可以支持-但是IE6等低级浏览器就不认识了"><a href="#注意-a标签默认支持4个伪类-但是div等元素不推荐使用类似于-div-hover这样的代码-因为高版本浏览器可以支持-但是IE6等低级浏览器就不认识了" class="headerlink" title="注意: a标签默认支持4个伪类,但是div等元素不推荐使用类似于.div:hover这样的代码,因为高版本浏览器可以支持,但是IE6等低级浏览器就不认识了"></a>注意: a标签默认支持4个伪类,但是div等元素不推荐使用类似于<code>.div:hover</code>这样的代码,因为高版本浏览器可以支持,但是IE6等低级浏览器就不认识了</h2><h1 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h1><h2 id="常见的伪元素有"><a href="#常见的伪元素有" class="headerlink" title="常见的伪元素有"></a>常见的伪元素有</h2><p><code>::before</code>  在元素内容之前添加一个伪元素</p>
-<p><code>::after</code> 在元素内容之后添加一个伪元素</p>
-<p><code>::first-line</code> 匹配元素内容第一行的文字</p>
-<p><code>::first-letter</code> 匹配元素内容第一行第一个字符(汉字或英文)</p>
-<p><code>::selection</code> 鼠标选中的区域的颜色</p>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><h3 id="1-为了区分伪类和伪元素-有个不成文的规定-是伪类要用一个冒号-伪元素用两个冒号"><a href="#1-为了区分伪类和伪元素-有个不成文的规定-是伪类要用一个冒号-伪元素用两个冒号" class="headerlink" title="1.为了区分伪类和伪元素,有个不成文的规定,是伪类要用一个冒号 : ,伪元素用两个冒号::"></a>1.为了区分伪类和伪元素,有个不成文的规定,是伪类要用一个冒号 : ,伪元素用两个冒号::</h3><h3 id="2-before和after伪元素-设置CSS属性的时候-要加上content-’xxx内容’-即使伪元素没有内容-也要写上content-’’-content不可缺少"><a href="#2-before和after伪元素-设置CSS属性的时候-要加上content-’xxx内容’-即使伪元素没有内容-也要写上content-’’-content不可缺少" class="headerlink" title="2.before和after伪元素,设置CSS属性的时候,要加上content:’xxx内容’;,即使伪元素没有内容,也要写上content:’’;  content不可缺少"></a>2.before和after伪元素,设置CSS属性的时候,要加上<code>content:’xxx内容’;</code>,即使伪元素没有内容,也要写上<code>content:’’;</code>  content不可缺少</h3><h3 id="3-伪元素前面都可以加选择器来匹配不同的元素"><a href="#3-伪元素前面都可以加选择器来匹配不同的元素" class="headerlink" title="3.伪元素前面都可以加选择器来匹配不同的元素"></a>3.伪元素前面都可以加选择器来匹配不同的元素</h3>
+        <h1 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h1><h3 id="CSS-伪类用于向某些选择器添加特殊的效果。"><a href="#CSS-伪类用于向某些选择器添加特殊的效果。" class="headerlink" title="CSS 伪类用于向某些选择器添加特殊的效果。"></a>CSS 伪类用于向某些选择器添加特殊的效果。</h3><h4 id="默认a标签的4个伪类"><a href="#默认a标签的4个伪类" class="headerlink" title="默认a标签的4个伪类:"></a>默认a标签的4个伪类:</h4><pre><code>:link 
+
+:hover 
+
+:visited 
+
+:active 
+</code></pre><h3 id="在支持-CSS-的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。"><a href="#在支持-CSS-的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。" class="headerlink" title="在支持 CSS 的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。"></a>在支持 CSS 的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。</h3><pre><code>a:link {color: #FF0000}        /* 未访问的链接 */
+
+a:visited {color: #00FF00}    /* 已访问的链接 */
+
+a:hover {color: #FF00FF}     /* 鼠标移动到链接上 */
+
+a:active {color: #0000FF}     /* 选定的链接 */
+</code></pre><h4 id="那么-伪类有没有什么注意事项呢"><a href="#那么-伪类有没有什么注意事项呢" class="headerlink" title="那么 伪类有没有什么注意事项呢?"></a>那么 伪类有没有什么注意事项呢?</h4><h3 id="在-CSS-定义中，a-hover-必须被置于-a-link-和-a-visited-之后，才是有效的。"><a href="#在-CSS-定义中，a-hover-必须被置于-a-link-和-a-visited-之后，才是有效的。" class="headerlink" title="在 CSS 定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。"></a>在 CSS 定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。</h3><h3 id="在-CSS-定义中，a-active-必须被置于-a-hover-之后，才是有效的。"><a href="#在-CSS-定义中，a-active-必须被置于-a-hover-之后，才是有效的。" class="headerlink" title="在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。"></a>在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。</h3><h3 id="而且伪类名称对大小写不敏感。"><a href="#而且伪类名称对大小写不敏感。" class="headerlink" title="而且伪类名称对大小写不敏感。"></a>而且伪类名称对大小写不敏感。</h3><h2 id="注意-a标签默认支持4个伪类-但是div等元素不推荐使用类似于-div-hover这样的代码-因为高版本浏览器可以支持-但是IE6等低级浏览器就不认识了"><a href="#注意-a标签默认支持4个伪类-但是div等元素不推荐使用类似于-div-hover这样的代码-因为高版本浏览器可以支持-但是IE6等低级浏览器就不认识了" class="headerlink" title="注意: a标签默认支持4个伪类,但是div等元素不推荐使用类似于.div:hover这样的代码,因为高版本浏览器可以支持,但是IE6等低级浏览器就不认识了"></a>注意: a标签默认支持4个伪类,但是div等元素不推荐使用类似于<code>.div:hover</code>这样的代码,因为高版本浏览器可以支持,但是IE6等低级浏览器就不认识了</h2><h1 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h1><h2 id="常见的伪元素有"><a href="#常见的伪元素有" class="headerlink" title="常见的伪元素有"></a>常见的伪元素有</h2><pre><code>::before   在元素内容之前添加一个伪元素
+
+::after  在元素内容之后添加一个伪元素
+
+::first-line  匹配元素内容第一行的文字
+
+::first-letter  匹配元素内容第一行第一个字符(汉字或英文)
+
+::selection   鼠标选中的区域的颜色
+</code></pre><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><h3 id="1-为了区分伪类和伪元素-有个不成文的规定-是伪类要用一个冒号-伪元素用两个冒号"><a href="#1-为了区分伪类和伪元素-有个不成文的规定-是伪类要用一个冒号-伪元素用两个冒号" class="headerlink" title="1.为了区分伪类和伪元素,有个不成文的规定,是伪类要用一个冒号 : ,伪元素用两个冒号::"></a>1.为了区分伪类和伪元素,有个不成文的规定,是伪类要用一个冒号 : ,伪元素用两个冒号::</h3><h3 id="2-before和after伪元素-设置CSS属性的时候-要加上content-’xxx内容’-即使伪元素没有内容-也要写上content-’’-content不可缺少"><a href="#2-before和after伪元素-设置CSS属性的时候-要加上content-’xxx内容’-即使伪元素没有内容-也要写上content-’’-content不可缺少" class="headerlink" title="2.before和after伪元素,设置CSS属性的时候,要加上content:’xxx内容’;,即使伪元素没有内容,也要写上content:’’;  content不可缺少"></a>2.before和after伪元素,设置CSS属性的时候,要加上<code>content:’xxx内容’;</code>,即使伪元素没有内容,也要写上<code>content:’’;</code>  content不可缺少</h3><h3 id="3-伪元素前面都可以加选择器来匹配不同的元素"><a href="#3-伪元素前面都可以加选择器来匹配不同的元素" class="headerlink" title="3.伪元素前面都可以加选择器来匹配不同的元素"></a>3.伪元素前面都可以加选择器来匹配不同的元素</h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/12/HTML中关于伪元素和伪类/" data-id="cio49nv5p0000bczq5vspnuk9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/12/HTML中关于伪元素和伪类/" data-id="cio49rlde0001c2zqu4y1qfww" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
@@ -145,9 +155,47 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/12/如何搭建hexo/" data-id="cio49nv6f0004bczq8s5nbukv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/12/如何搭建hexo/" data-id="cio49rld80000c2zq7jic66go" class="article-share-link">Share</a>
       
       
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-5-11" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/11/5-11/" class="article-date">
+  <time datetime="2016-05-11T06:48:23.000Z" itemprop="datePublished">2016-05-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/11/5-11/">我的第一篇博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="node-js介绍"><a href="#node-js介绍" class="headerlink" title="node.js介绍"></a>node.js介绍</h1><h3 id="node-js-是什么-是使Javascript运行在服务器端的平台-node-js很强大-PHP能做的事情-node-js也能做-并且做的更好"><a href="#node-js-是什么-是使Javascript运行在服务器端的平台-node-js很强大-PHP能做的事情-node-js也能做-并且做的更好" class="headerlink" title="node.js 是什么?是使Javascript运行在服务器端的平台,node.js很强大,PHP能做的事情,node.js也能做,并且做的更好!"></a>node.js 是什么?是使Javascript运行在服务器端的平台,node.js很强大,PHP能做的事情,node.js也能做,并且做的更好!</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/11/5-11/" data-id="cio49rldn0004c2zqkynls1z7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">node.js</a></li></ul>
+
     </footer>
   </div>
   
@@ -183,48 +231,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/11/我的第一篇博客/" data-id="cio49nv6q0005bczqldcb79yb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/11/我的第一篇博客/" data-id="cio49rlei0008c2zqhngcb5p8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/第一篇博客-hexo/">第一篇博客 hexo</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-5-11" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/11/5-11/" class="article-date">
-  <time datetime="2016-05-11T06:48:23.000Z" itemprop="datePublished">2016-05-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/11/5-11/">我的第一篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="node-js介绍"><a href="#node-js介绍" class="headerlink" title="node.js介绍"></a>node.js介绍</h1><h3 id="node-js-是什么-是使Javascript运行在服务器端的平台-node-js很强大-PHP能做的事情-node-js也能做-并且做的更好"><a href="#node-js-是什么-是使Javascript运行在服务器端的平台-node-js很强大-PHP能做的事情-node-js也能做-并且做的更好" class="headerlink" title="node.js 是什么?是使Javascript运行在服务器端的平台,node.js很强大,PHP能做的事情,node.js也能做,并且做的更好!"></a>node.js 是什么?是使Javascript运行在服务器端的平台,node.js很强大,PHP能做的事情,node.js也能做,并且做的更好!</h3>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/11/5-11/" data-id="cio49nv6t0006bczqcku8xp8m" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">node.js</a></li></ul>
 
     </footer>
   </div>
@@ -268,7 +278,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/11/hello-world/" data-id="cio49nv5u0001bczq7d8h1cqj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/11/hello-world/" data-id="cio49rldg0002c2zq7ndr6wqf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -330,11 +340,11 @@
           </li>
         
           <li>
-            <a href="/2016/05/11/我的第一篇博客/">我的第一篇博客</a>
+            <a href="/2016/05/11/5-11/">我的第一篇博客</a>
           </li>
         
           <li>
-            <a href="/2016/05/11/5-11/">我的第一篇博客</a>
+            <a href="/2016/05/11/我的第一篇博客/">我的第一篇博客</a>
           </li>
         
           <li>
